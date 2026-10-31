@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiX } from 'react-icons/fi'
+import { FiX, FiHelpCircle } from 'react-icons/fi'
 
 export const QuizCalloutBanner = () => {
   const prompts = [
@@ -30,7 +30,7 @@ export const QuizCalloutBanner = () => {
         
         {/* Question Prompt */}
         <div className="flex items-center space-x-2.5 text-center sm:text-left self-start sm:self-auto">
-          <span className="text-base flex-shrink-0 animate-bounce">💡</span>
+          <FiHelpCircle className="w-4 h-4 text-accent flex-shrink-0" />
           <div className="font-bold text-muted dark:text-white/90">
             <AnimatePresence mode="wait">
               <motion.span

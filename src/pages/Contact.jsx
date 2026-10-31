@@ -192,7 +192,7 @@ export const Contact = () => {
             </div>
           </section>
 
-          {/* Rate Us ⭐ Section */}
+          {/* Rate Us Section */}
           <RateUsCard />
 
           {/* Security Notice */}

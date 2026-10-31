@@ -448,9 +448,7 @@ export const ResultMail = () => {
                         </td>
                         <td className="py-3.5 px-4 font-semibold">
                           {link.is_spoofed ? (
-                            <span className="inline-flex items-center space-x-1 text-phishing">
-                              <span>⚠️ Hijacked Link</span>
-                            </span>
+                            <span className="inline-flex items-center space-x-1.5 text-phishing"><FiAlertTriangle className="w-3.5 h-3.5" /><span>Hijacked Link</span></span>
                           ) : (
                             <span className="text-safe">Matched</span>
                           )}

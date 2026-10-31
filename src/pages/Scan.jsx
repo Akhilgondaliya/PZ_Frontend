@@ -518,7 +518,7 @@ export const Scan = () => {
         </motion.div>
 
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#0d1b2a] dark:text-white pb-1">
-          🔍 Phish<span className="text-accent">Zero</span> Scanning Sandbox
+          Phish<span className="text-accent">Zero</span> Scanning Sandbox
         </h1>
 
         <p className="text-sm sm:text-base text-muted leading-relaxed max-w-2xl mx-auto">
@@ -618,7 +618,7 @@ export const Scan = () => {
                   htmlFor="url-scan-input"
                   className="text-[10px] font-extrabold uppercase tracking-widest text-muted block"
                 >
-                  🔗 Paste website URL
+                  Paste website URL
                 </label>
                 <input
                   id="url-scan-input"
@@ -648,7 +648,7 @@ export const Scan = () => {
               <div className="flex items-center space-x-2">
                 <FiInfo className="w-4 h-4 text-accent" />
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white">
-                  🧪 Try a Sample URL
+                  Try a Sample URL
                 </span>
               </div>
               <p className="text-xs text-muted leading-relaxed">
@@ -718,7 +718,7 @@ export const Scan = () => {
               <div>
                 <div className="flex items-center justify-between mb-2.5">
                   <span className="text-[10px] font-extrabold uppercase tracking-widest text-muted">
-                    📷 Live Camera Scanner
+                    Live Camera Scanner
                   </span>
                   <button
                     onClick={() =>
@@ -795,7 +795,7 @@ export const Scan = () => {
               {/* Drag and Drop Box */}
               <div className="space-y-2">
                 <label className="text-[10px] font-extrabold uppercase tracking-widest text-muted">
-                  📷 Upload QR Image file
+                  Upload QR Image file
                 </label>
                 <div
                   onDragOver={handleDragOver}
@@ -847,7 +847,7 @@ export const Scan = () => {
               <div className="flex items-center space-x-2">
                 <FiInfo className="w-4 h-4 text-accent" />
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white">
-                  🧪 Try Sample QR Codes
+                  Try Sample QR Codes
                 </span>
               </div>
               <p className="text-xs text-muted leading-relaxed">
@@ -989,7 +989,7 @@ export const Scan = () => {
                   htmlFor="mail-sender-input"
                   className="text-[10px] font-extrabold uppercase tracking-widest text-muted"
                 >
-                  ✉️ Sender Address
+                  Sender Address
                 </label>
                 <input
                   id="mail-sender-input"
@@ -1006,7 +1006,7 @@ export const Scan = () => {
                   htmlFor="mail-subject-input"
                   className="text-[10px] font-extrabold uppercase tracking-widest text-muted"
                 >
-                  📝 Subject Line
+                  Subject Line
                 </label>
                 <input
                   id="mail-subject-input"
@@ -1023,7 +1023,7 @@ export const Scan = () => {
                   htmlFor="mail-body-input"
                   className="text-[10px] font-extrabold uppercase tracking-widest text-muted"
                 >
-                  📄 Email Content (Body)
+                  Email Content (Body)
                 </label>
                 <textarea
                   id="mail-body-input"
@@ -1049,7 +1049,7 @@ export const Scan = () => {
               <div className="flex items-center space-x-2">
                 <FiInfo className="w-4 h-4 text-accent" />
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white">
-                  🧪 Fill Mock Email Templates
+                  Fill Mock Email Templates
                 </span>
               </div>
               <p className="text-xs text-muted leading-relaxed">
@@ -1129,7 +1129,7 @@ export const Scan = () => {
               {/* Drag and Drop Box */}
               <div className="space-y-2">
                 <label className="text-[10px] font-extrabold uppercase tracking-widest text-muted">
-                  📁 Upload standard Image file
+                  Upload standard Image file
                 </label>
                 <div
                   onDragOver={(e) => e.preventDefault()}
@@ -1181,7 +1181,7 @@ export const Scan = () => {
               <div className="flex items-center space-x-2">
                 <FiInfo className="w-4 h-4 text-accent" />
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white">
-                  🧪 Try Sample Images
+                  Try Sample Images
                 </span>
               </div>
               <p className="text-xs text-muted leading-relaxed">
@@ -1298,7 +1298,7 @@ export const Scan = () => {
               {/* Drag and Drop Box */}
               <div className="space-y-2">
                 <label className="text-[10px] font-extrabold uppercase tracking-widest text-muted">
-                  📁 Upload Android APK package file
+                  Upload Android APK package file
                 </label>
                 <div
                   onDragOver={(e) => e.preventDefault()}
@@ -1350,7 +1350,7 @@ export const Scan = () => {
               <div className="flex items-center space-x-2">
                 <FiInfo className="w-4 h-4 text-accent" />
                 <span className="text-[11px] font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white">
-                  🧪 Try Sample APKs
+                  Try Sample APKs
                 </span>
               </div>
               <p className="text-xs text-muted leading-relaxed">

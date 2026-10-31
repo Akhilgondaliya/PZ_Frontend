@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FiShield, FiGithub, FiExternalLink, FiAward, FiMail, FiCheck, FiCpu, FiTrendingUp, FiActivity, FiGlobe, FiDatabase, FiLock, FiTerminal, FiLayers } from 'react-icons/fi'
+import { FiShield, FiGithub, FiExternalLink, FiAward, FiMail, FiCheck, FiCpu, FiTrendingUp, FiActivity, FiGlobe, FiDatabase, FiLock, FiTerminal, FiLayers, FiAlertTriangle } from 'react-icons/fi'
 import RateUsCard from '../components/RateUsCard'
 
 
@@ -279,9 +279,12 @@ export const About = () => {
         </div>
       </section>
 
+      {/* Rate Us Section */}
+      <RateUsCard />
+
       {/* Academic Disclaimer */}
       <div className="p-4 rounded-xl border border-muted/20 dark:border-accent/5 text-center bg-card/40 dark:bg-card/25 backdrop-blur-sm text-xs text-muted font-semibold">
-        ⚠️ <b>Internship Notice:</b> Developed as part of IBM CSRBOX Cybersecurity Internship 2026. All sandboxed audits are simulated.
+        <FiAlertTriangle className="w-4 h-4 text-amber-500 shrink-0 inline-block mr-1.5 align-middle" /><span><b>Internship Notice:</b> Developed as part of IBM CSRBOX Cybersecurity Internship 2026. All sandboxed audits are simulated.</span>
       </div>
 
     </div>

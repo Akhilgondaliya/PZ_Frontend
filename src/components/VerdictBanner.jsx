@@ -111,7 +111,7 @@ export const VerdictBanner = ({ verdict = 'Safe', url = '' }) => {
       id="verdict-banner-container"
     >
       
-      {/* 🟢 SAFE CELEBRATION: Radiating Shield Protection Waves */}
+      {/* SAFE CELEBRATION: Radiating Shield Protection Waves */}
       {normalizedVerdict === 'safe' && (
         <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none flex items-center justify-center">
           {/* Pulsing deep green aura behind everything */}
@@ -157,7 +157,7 @@ export const VerdictBanner = ({ verdict = 'Safe', url = '' }) => {
         </div>
       )}
 
-      {/* 🔴 DANGER Flashing Aura Rings */}
+      {/* DANGER Flashing Aura Rings */}
       {normalizedVerdict === 'phishing' && (
         <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none">
           <motion.div
@@ -168,7 +168,7 @@ export const VerdictBanner = ({ verdict = 'Safe', url = '' }) => {
         </div>
       )}
 
-      {/* 🟡 CAUTION Glow Pulse */}
+      {/* CAUTION Glow Pulse */}
       {normalizedVerdict === 'suspicious' && (
         <div className="absolute inset-0 overflow-hidden rounded-3xl pointer-events-none">
           <motion.div

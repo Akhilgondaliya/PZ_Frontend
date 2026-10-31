@@ -44,7 +44,7 @@ export const Result = () => {
   }
 
   const {
-    url = "",
+    url,
     score,
     verdict,
     results = [],
@@ -54,10 +54,6 @@ export const Result = () => {
     ip_address = "Unavailable",
     confidence = 95,
   } = scanResult;
-
-  const formattedUrl = url.startsWith("http://") || url.startsWith("https://") ? url : `https://${url}`;
-  const sandboxProxyUrl = `/api/proxy?url=${encodeURIComponent(formattedUrl)}`;
-
 
   // Copy result details to clipboard
   const handleCopyResultUrl = () => {
@@ -237,7 +233,7 @@ export const Result = () => {
           <FiAlertTriangle className="w-6 h-6 text-phishing flex-shrink-0 mt-0.5" />
           <div>
             <h4 className="text-sm font-extrabold text-phishing uppercase tracking-wider">
-              ⚠ Possible Brand Impersonation Detected
+              Possible Brand Impersonation Detected
             </h4>
             <p className="text-xs text-muted mt-1 leading-relaxed font-semibold">
               CRITICAL: This website's address appears to mimic a popular brand
@@ -403,21 +399,21 @@ export const Result = () => {
             {previewMode === "screenshot" ? (
               <div className="w-full h-full relative">
                 <img
-                  src={`https://image.thum.io/get/width/1280/crop/800/maxAge/12/${formattedUrl}`}
+                  src={`https://image.thum.io/get/width/1280/crop/800/maxAge/12/${url}`}
                   alt="Safe screenshot preview of the scanned URL"
                   className="w-full h-full object-cover object-top select-none"
                   loading="lazy"
                   onError={(e) => {
                     e.target.onerror = null;
-                    e.target.src = `https://mini.s-shot.ru/1024x768/PNG/1024/?${formattedUrl}`;
+                    e.target.src = `https://mini.s-shot.ru/1024x768/PNG/1024/?${url}`;
                   }}
                 />
               </div>
             ) : (
               <iframe
-                src={sandboxProxyUrl}
+                src={url}
                 title="PhishZero Isolated Sandbox URL Preview"
-                sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-modals"
+                sandbox=""
                 referrerPolicy="no-referrer"
                 className="w-full h-full border-none bg-white min-h-[300px] sm:min-h-[450px]"
               />
@@ -426,10 +422,10 @@ export const Result = () => {
         </div>
 
         {previewMode === "sandbox" && (
-          <div className="flex items-start space-x-2.5 p-3.5 bg-accent/10 border border-accent/20 text-accent rounded-xl text-xs text-left">
+          <div className="flex items-start space-x-2.5 p-3.5 bg-amber-500/10 border border-amber-500/20 text-amber-500 rounded-xl text-xs text-left">
             <FiAlertTriangle className="w-4 h-4 mt-0.5 flex-shrink-0" />
             <p className="leading-relaxed font-semibold">
-              <b>PhishZero Proxy Sandbox Active:</b> The website content is proxied through our threat analysis engine to bypass <code>X-Frame-Options</code> restrictions while keeping scripts strictly contained inside the sandbox. Switch to <b>Safe Capture (Screenshot)</b> above for an isolated static preview.
+              <b>Notice:</b> If the frame displays a "refused to connect" error, this website is blocking cross-origin embedding via security headers (<code>X-Frame-Options</code>). Switch to the <b>Safe Capture (Screenshot)</b> tab above to view the website screenshot.
             </p>
           </div>
         )}

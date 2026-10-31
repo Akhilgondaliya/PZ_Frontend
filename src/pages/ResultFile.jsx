@@ -319,7 +319,7 @@ export const ResultFile = () => {
                   {stego_payload ? (
                     <div className="mt-3 space-y-1.5">
                       <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white block">
-                        🔑 Decoded Stego Payload:
+                        Decoded Stego Payload:
                       </span>
                       <p className="text-xs font-mono font-bold text-accent bg-black/45 p-3 rounded-xl border border-[#1f2937] break-all select-all shadow-inner leading-relaxed">
                         {stego_payload}
@@ -354,7 +354,7 @@ export const ResultFile = () => {
               {/* High risk permissions */}
               <div className="space-y-4">
                 <h4 className="text-xs font-extrabold uppercase tracking-widest text-[#0d1b2a] dark:text-white">
-                  🚨 High-Risk Permissions Detected (
+                  High-Risk Permissions Detected (
                   {high_risk_permissions.length})
                 </h4>
 
